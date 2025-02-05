@@ -1,0 +1,397 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cherry Bomb One", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.cta-button {
+    padding: 0.5rem 1.5rem;
+    background: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 5% 4rem;
+    background: #f8f9fa;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: #4F46E5;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.download-button {
+    padding: 1rem 2rem;
+    background: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* Slider Styles */
+.slider-container {
+    overflow: hidden;
+    padding: 2rem 0;
+    background: #4F46E5;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}
+
+.slide-track span {
+    color: white;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Meet NANO Section */
+#meet-nano {
+    text-align: center;
+    padding: 5rem 5%;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Banner Section */
+.banner {
+    background: #4F46E5;
+    color: white;
+    text-align: center;
+    padding: 4rem 5%;
+}
+
+/* Levels Section */
+#levels {
+    padding: 5rem 5%;
+    text-align: center;
+    background: white;
+}
+
+.levels-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.levels-subtitle {
+    font-size: 2.5rem;
+    color: #4F46E5;
+    margin-bottom: 3rem;
+}
+
+.levels-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 4rem auto;
+    max-width: 1200px;
+}
+
+.level-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.level-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #4F46E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.level-circle:hover {
+    transform: scale(1.1);
+}
+
+.nano-icon {
+    font-size: 1.5rem;
+    color: #4F46E5;
+    font-weight: bold;
+}
+
+.level-connector {
+    width: 50px;
+    height: 3px;
+    background: #4F46E5;
+}
+
+.levels-description {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    color: #4a5568;
+    line-height: 1.8;
+}
+
+/* How It Works Section */
+#how {
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.start-button {
+    padding: 1rem 2rem;
+    background: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* App Section */
+#app {
+    padding: 5rem 5%;
+    background: #f8f9fa;
+    overflow: hidden;
+}
+
+.app-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.app-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.app-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.app-description {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+}
+
+.store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 200px;
+}
+
+.store-button img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.store-button:hover img {
+    transform: scale(1.05);
+}
+
+.app-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.phone-mockup {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateY(-15deg);
+    transition: transform 0.3s ease;
+}
+
+.phone-mockup:hover {
+    transform: perspective(1000px) rotateY(-5deg);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 3rem 5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .app-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .app-text {
+        max-width: 100%;
+    }
+
+    .store-buttons {
+        margin: 0 auto;
+    }
+
+    .phone-mockup {
+        transform: none;
+    }
+
+    .phone-mockup:hover {
+        transform: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .levels-grid {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .level-connector {
+        display: none;
+    }
+    
+    .level-circle {
+        width: 60px;
+        height: 60px;
+    }
+}
